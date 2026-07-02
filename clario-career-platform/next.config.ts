@@ -22,6 +22,9 @@ const nextConfig: NextConfig = {
     ],
   },
   reactStrictMode: false,
+  experimental: {
+    turbopackUseSystemTlsCerts: true,
+  },
 };
 
 export default nextConfig;

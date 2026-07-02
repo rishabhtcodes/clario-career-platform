@@ -58,7 +58,7 @@ export function HomeCalendar() {
       if (error) {
         console.error("Error fetching events:", error);
       } else if (data) {
-        const mappedEvents = data.map((ev) => ({
+        const mappedEvents = data.map((ev: any) => ({
           ...ev,
           start: new Date(ev.start_time),
           end: new Date(ev.end_time),
@@ -66,7 +66,7 @@ export function HomeCalendar() {
 
         // Compute all unique dates in event ranges for the current month
         const allDatesSet = new Set<string>();
-        mappedEvents.forEach((event) => {
+        mappedEvents.forEach((event: any) => {
           getDatesInRange(event.start, event.end).forEach((d) => {
             const date = moment(d);
             // Only include dates in the current month and year

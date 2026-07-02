@@ -81,7 +81,7 @@ export default function MyCalendar() {
         console.error("Error fetching events:", error);
         setLoading(false);
       } else if (data) {
-        const mapped = data.map((ev) => ({
+        const mapped = data.map((ev: any) => ({
           ...ev,
           start: new Date(ev.start_time),
           end: new Date(ev.end_time),

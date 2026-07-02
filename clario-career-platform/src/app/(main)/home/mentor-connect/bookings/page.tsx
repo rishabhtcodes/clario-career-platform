@@ -55,7 +55,7 @@ const Bookings = () => {
       .on(
         "postgres_changes",
         { event: "INSERT", schema: "public", table: TABLE },
-        (payload) => {
+        (payload: any) => {
           setSessions((prev) => [payload.new as MentorSession, ...prev]);
         }
       )

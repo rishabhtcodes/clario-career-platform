@@ -104,6 +104,8 @@ const MentorCallback = () => {
       </div>
     );
   }
+
+  return null;
 };
 
 export default MentorCallback;

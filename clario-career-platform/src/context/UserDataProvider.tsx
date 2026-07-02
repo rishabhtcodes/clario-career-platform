@@ -144,7 +144,8 @@ export function UserDataProvider({ children }: { children: React.ReactNode }) {
         if (fetchError) throw fetchError;
 
         if (!existingMentors || existingMentors.length === 0) {
-          const name = authUser.user_metadata?.full_name;
+          const name =
+            authUser.user_metadata?.full_name || "New Mentor";
           const avatar =
             authUser.user_metadata?.avatar_url ||
             authUser.user_metadata?.picture;
