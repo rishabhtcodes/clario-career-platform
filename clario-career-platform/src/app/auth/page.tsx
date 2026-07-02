@@ -138,12 +138,12 @@ export default function AuthPage() {
                 continue with Google
               </Button>
               <Button
-                className="font-inter text-sm tracking-wide bg-blue-50 text-black rounded border shadow-sm  hover:bg-blue-100 hover:scale-105 hover:border-blue-400 cursor-pointer  w-[280px] py-5"
+                className="font-inter text-sm tracking-wide bg-blue-50 text-black rounded border shadow-sm hover:bg-blue-100 hover:scale-105 hover:border-blue-400 cursor-pointer w-[280px] py-5"
                 onClick={() => handleLogin("discord")}
               >
                 <Image
                   src="/discord.png"
-                  alt="Google"
+                  alt="Discord"
                   width={25}
                   height={25}
                   className="mr-5"
@@ -151,12 +151,12 @@ export default function AuthPage() {
                 continue with Discord
               </Button>
               <Button
-                className="font-inter text-sm tracking-wide bg-blue-50 text-black rounded border shadow-sm  hover:bg-blue-100 hover:scale-105 hover:border-blue-400 cursor-pointer  w-[280px] py-5"
+                className="font-inter text-sm tracking-wide bg-blue-50 text-black rounded border shadow-sm hover:bg-blue-100 hover:scale-105 hover:border-blue-400 cursor-pointer w-[280px] py-5"
                 onClick={() => handleLogin("slack_oidc")}
               >
                 <Image
                   src="/slack.png"
-                  alt="Google"
+                  alt="Slack"
                   width={25}
                   height={25}
                   className="mr-5"
